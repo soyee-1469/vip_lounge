@@ -88,9 +88,24 @@ export function Viewer({ planMarkup, views }: Props) {
               TOMATOK VIP LOUNGE 배치안
             </h1>
             <p className="mt-1 text-sm text-muted">
-              도면을 누르면 오른쪽 사진이 열립니다. 컨셉 1안과 2안은 그 사진에서 바꿉니다.
+              도면을 누르면 오른쪽 사진이 열립니다. 컨셉 1안과 2안은 제목 옆 버튼으로 바꿉니다.
             </p>
           </div>
+                <div className="flex w-fit overflow-hidden rounded-md border border-ink text-sm" role="group" aria-label="컨셉">
+                  {concepts.map((item, index) => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      aria-pressed={item.id === concept.id && !compare}
+                      onClick={() => update({ concept: item.id, compare: null })}
+                      className={`px-4 py-2 ${
+                        item.id === concept.id && !compare ? "bg-ink text-paper" : "bg-panel"
+                      }`}
+                    >
+                      컨셉 {index + 1}안
+                    </button>
+                  ))}
+                </div>
         </div>
       </header>
 
@@ -148,6 +163,14 @@ export function Viewer({ planMarkup, views }: Props) {
               >
                 {showAerial ? "도면으로 돌아가기" : "전체 항공뷰 보기"}
               </button>
+              <a
+                href="/tomatok-3d.html"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-md border border-ink bg-panel px-3 py-1.5 font-medium"
+              >
+                3D 도면 보기
+              </a>
               <span className="ml-2 text-muted">동선 표시</span>
               {flows.map((item) => (
                 <button
@@ -240,21 +263,6 @@ export function Viewer({ planMarkup, views }: Props) {
                   </div>
                 ) : null}
 
-                <div className="mt-4 flex w-fit overflow-hidden rounded-md border border-ink text-sm" role="group" aria-label="이 시점의 컨셉">
-                  {concepts.map((item, index) => (
-                    <button
-                      key={item.id}
-                      type="button"
-                      aria-pressed={item.id === concept.id && !compare}
-                      onClick={() => update({ concept: item.id, compare: null })}
-                      className={`px-3 py-1.5 ${
-                        item.id === concept.id && !compare ? "bg-ink text-paper" : "bg-panel"
-                      }`}
-                    >
-                      컨셉 {index + 1}안
-                    </button>
-                  ))}
-                </div>
                 <div
                   className={`mt-3 grid gap-3 ${compare ? "sm:grid-cols-2" : ""}`}
                 >

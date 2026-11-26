@@ -68,9 +68,9 @@ button:focus-visible,.lbl:focus-visible{outline:2px solid var(--gold);outline-of
 
 <aside>
   <h1>토마톡 대전지사 공간 모델</h1>
-  <p class="ver">용두동 신규 건물 2·4층 · 2026.11.26</p>
+  <p class="ver">용두동 신규 건물 2층 · 2026.11.26</p>
 
-  <div class="seg" role="group" aria-label="층 선택">
+  <div class="seg" role="group" style="display:none" aria-label="층 선택">
     <button data-view="2f" aria-pressed="false">2층</button>
     <button data-view="4" aria-pressed="false">4층</button>
     <button data-view="all" aria-pressed="true">전체</button>
@@ -79,13 +79,13 @@ button:focus-visible,.lbl:focus-visible{outline:2px solid var(--gold);outline-of
   <p class="hint" id="allNote" style="margin:-6px 0 10px"></p>
   <label class="toggle"><input type="checkbox" id="lblToggle" checked> 공간 이름 표시</label>
 
-  <div class="legend" id="legend"></div>
+  <div class="legend" id="legend" style="display:none"></div>
 
   <div id="info">
     <p class="hint">공간을 누르면 요구사항과 면적이 표시됩니다. 드래그로 회전, 휠·두 손가락으로 확대할 수 있습니다.</p>
   </div>
 
-  <p class="note">11/26 레이아웃 기준: VIP 라운지(판매·결제 카운터·체험 대기·파우더룸)는 파티션 없이 오픈, 관리실 1~4, 미팅실 2실, 지사장실 1~4, 탕비실, 통합 업무 라운지, 통유리 회장실. 4층 세미나 홀(강단 동측 정중앙, 64석) · 테라스. 면적은 도면 치수 기준 추정치.</p>
+  <p class="note" style="display:none">11/26 레이아웃 기준: VIP 라운지(판매·결제 카운터·체험 대기·파우더룸)는 파티션 없이 오픈, 관리실 1~4, 미팅실 2실, 지사장실 1~4, 탕비실, 통합 업무 라운지, 통유리 회장실. 4층 세미나 홀(강단 동측 정중앙, 64석) · 테라스. 면적은 도면 치수 기준 추정치.</p>
 </aside>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -265,7 +265,7 @@ function setView(v){
 }
 document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
 // 고객 구역이 있는 2층부터 보여 준다 (?view=all 로 전체)
-setTimeout(()=>setView(new URLSearchParams(location.search).get('view')||'2f'),0);
+setTimeout(()=>setView('2f'),0); /* 2층 고정 */
 document.getElementById('lblToggle').addEventListener('change',e=>{labelsEl.style.display=e.target.checked?'':'none'});
 
 function frame(){

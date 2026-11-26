@@ -82,14 +82,13 @@ export const concepts: ShopConcept[] = [
 ];
 
 export const cameras: Camera[] = [
-  { id: "entry", no: 1, label: "입구에서 브랜드 월", x: 8.7, y: 11.3, heading: 352, stage: 1, zoneId: "entry" },
-  { id: "sales", no: 2, label: "쉼 라운지와 발마사지", x: 7.6, y: 6.3, heading: 248, stage: 1, zoneId: "sales" },
+  { id: "entry", no: 1, label: "입구에서 본 라운지", x: 9.3, y: 8.4, heading: 312, stage: 1, zoneId: "entry" },
   { id: "wait", no: 3, label: "안내데스크와 대기", x: 9.0, y: 6.4, heading: 118, stage: 1, zoneId: "wait" },
   { id: "room", no: 4, label: "관리실", x: 9.0, y: 3.05, heading: 30, stage: 1, zoneId: "rooms" },
   { id: "corridor", no: 5, label: "관리실 복도", x: 0.7, y: 4.07, heading: 90, stage: 2, zoneId: "corridor" },
   { id: "powder", no: 6, label: "파우더룸", x: 6.6, y: 8.2, heading: 190, stage: 2, zoneId: "powder" },
   { id: "foot", no: 7, label: "셀프 발마사지", x: 6.0, y: 8.55, heading: 262, stage: 1, zoneId: "foot" },
-  { id: "desk", no: 9, label: "안내데스크 (접수·판매)", x: 12.6, y: 8.0, heading: 180, stage: 1, zoneId: "counter" },
+  { id: "desk", no: 9, label: "안내데스크 (접수·판매)", x: 9.6, y: 7.2, heading: 122, stage: 1, zoneId: "counter" },
   { id: "sofaview", no: 12, label: "소파에 앉아서 본 모습", x: 2.6, y: 7.1, heading: 38, stage: 1, zoneId: "sales" },
   { id: "aerial", no: 8, label: "항공뷰 (전체)", x: 8.3, y: 13.4, heading: 0, stage: 1, zoneId: "entry" },
 ];
@@ -132,7 +131,7 @@ export const zones: Zone[] = [
       "소파 뒤에서 발마사지기까지 1.3m 통로",
     ],
     rects: [[0.9, 5.5, 4.6, 2.1]],
-    cameraIds: ["sofaview", "sales"],
+    cameraIds: ["sofaview"],
     why: [
       "소파 뒤에 긴 플랜터(4.4 × 0.35m)를 놓아 발마사지 자리와 나눴다. 발마사지를 받는 사람과 소파에 앉은 사람이 서로 가려진다.",
       "쉼 공간이다. 쿠폰 없이 온 VIP도 여기서 쉬다 간다.",
@@ -201,7 +200,7 @@ export const zones: Zone[] = [
       "셀프",
     ],
     rects: [[4.2, 4.7, 1.25, 1.0]],
-    cameraIds: ["sales"],
+    cameraIds: ["sofaview"],
     why: [
       "창가는 비워 두기로 해서 진열장 맨 왼쪽(창 옆)에서 TV 오른쪽 칸으로 옮겼다. 창에서 3m 떨어진다.",
       "쉼 소파 정면이라 앉은 자리에서 몇 걸음이다. 발마사지 좌석에서도 가깝다.",
@@ -273,8 +272,7 @@ export const zones: Zone[] = [
       [13.55, 8.7, 1.6, 1.3],
       [11.15, 10.65, 4.2, 0.4],
       [1.2, 4.74, 1.15, 0.5],
-      [4.25, 4.74, 1.8, 0.5],
-      [0.05, 4.68, 0.71, 3.86],
+      [5.45, 4.74, 1.7, 0.5],
     ],
     cameraIds: ["desk", "wait"],
     why: [
