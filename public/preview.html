@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>매장 컨셉 이미지 미리보기</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f6f3ee; --fg:#2b2622; --muted:#7a7068; --line:#ddd5ca; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1b1917; --fg:#efe9e1; --muted:#a69c92; --line:#3a3530; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
+  header { padding:28px 32px 8px; }
+  h1 { margin:0 0 6px; font-size:24px; }
+  p.sub { margin:0; color:var(--muted); font-size:14px; }
+  main { padding:16px 32px 48px; max-width:1800px; margin:0 auto; }
+  .head, .row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .head { position:sticky; top:0; background:var(--bg); padding:12px 0; z-index:2; border-bottom:1px solid var(--line); }
+  .head div { font-weight:700; font-size:17px; }
+  h2 { margin:28px 0 10px; font-size:16px; }
+  figure { margin:0; }
+  figure a { display:block; }
+  img { width:100%; height:auto; display:block; border-radius:8px; background:var(--line); aspect-ratio:3/2; object-fit:cover; }
+  details { margin-top:36px; border-top:1px solid var(--line); padding-top:16px; }
+  summary { cursor:pointer; font-weight:700; }
+  .plan { max-width:900px; margin-top:12px; aspect-ratio:auto; border-radius:8px; }
+  @media (max-width:800px) { .head, .row { grid-template-columns:1fr; } .head { position:static; } header, main { padding-left:16px; padding-right:16px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>매장 컨셉 이미지 미리보기</h1>
+  <p class="sub">같은 시점을 에스테틱과 메디컬로 나란히 봅니다. 이미지를 누르면 원본 크기로 열립니다.</p>
+</header>
+<main>
+  <div class="head"><div>A안 에스테틱</div><div>B안 메디컬</div></div>
+  <div id="rows"></div>
+  <details open>
+    <summary>평면도 초안과 카메라 위치</summary>
+    <img class="plan" src="/plan/floor-plan-draft.svg" alt="매장 평면도 초안">
+  </details>
+</main>
+<script>
+  const views = [
+    ["aerial", "0. 항공뷰 (전체 배치)"],
+    ["entry", "1. 입구에서 홀"],
+    ["lounge-tv", "2. 라운지에서 TV 벽"],
+    ["foot", "3. 발마사지"],
+    ["room", "4. 2인실"],
+    ["display", "5. 화장품 진열"],
+  ];
+  const v = Date.now();
+  document.getElementById("rows").innerHTML = views.map(([id, name]) => `
+    <h2>${name}</h2>
+    <div class="row">
+      ${["aesthetic", "medical"].map(c => `
+        <figure><a href="/views/${c}/${id}.webp?v=${v}" target="_blank" rel="noopener">
+          <img src="/views/${c}/${id}.webp?v=${v}" alt="${c === "aesthetic" ? "에스테틱" : "메디컬"} ${name}" loading="lazy">
+        </a></figure>`).join("")}
+    </div>`).join("");
+</script>
+</body>
+</html>
