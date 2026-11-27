@@ -1,205 +1,243 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.6 -2.4 25.2 23.6" width="1512" height="1416" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
 <rect x="-1.6" y="-2.4" width="25.2" height="23.6" fill="#ffffff"/>
 <text x="0" y="-1.5" font-size="0.6" font-weight="700" fill="#2b2622">토마톡 대전 2층 매장 평면도 (실제 도면)</text>
-<text x="0" y="-0.85" font-size="0.36" fill="#7a7068">2026-11-26 레이아웃과 3D 모델의 좌표를 그대로 옮겼다. 가정값이고 아닌 실제 치수다. 왼쪽이 고객 구역, 오른쪽은 사무 구역이다.</text>
+<text x="0" y="-0.85" font-size="0.36" fill="#7a7068">2026-11-26 레이아웃을 2026-11-27 실측(관리실 3.7m, 복도 1.2m, 그 아래 5.8m)에 맞추고 손 스케치를 반영했다. 왼쪽이 고객 구역, 오른쪽은 사무 구역이다.</text>
 <defs><g id="cam"><path d="M0 0 L-0.5 -0.95 L0.5 -0.95 Z" fill="#e2622b" opacity="0.28"/><circle r="0.3" fill="#e2622b"/></g></defs>
-<polygon points="0.0,0.0 19.9,0.0 19.9,1.65 19.9,1.65 19.9,12.51 19.9,14.44 9.55,14.44 9.55,17.53 0.0,17.53" fill="#f6f1ea"/>
-<polygon points="0.76,4.68 16.49,4.68 16.49,8.54 16.49,11.02 11.09,11.02 11.09,11.85 7.6,11.85 5.69,11.85 5.69,8.54 5.67,8.54 5.67,10.25 0.08,10.25 0.08,8.54 0.76,8.54" fill="#f8f2e6"/>
-<rect x="0.0" y="11.96" width="2.83" height="2.65" fill="#e3e9ee"/>
-<rect x="0.0" y="14.61" width="2.56" height="2.81" fill="#e3e9ee"/>
-<rect x="2.56" y="14.61" width="1.2" height="2.81" fill="#e3e9ee"/>
-<rect x="3.76" y="12.96" width="3.22" height="4.57" fill="#e2e2e2"/>
-<rect x="7.03" y="14.39" width="2.52" height="3.14" fill="#e2e2e2"/>
-<rect x="0.05" y="0.0" width="5.64" height="3.47" fill="#efe3d3"/>
-<rect x="5.69" y="0.0" width="5.4" height="3.47" fill="#efe3d3"/>
-<rect x="11.09" y="0.0" width="5.4" height="3.47" fill="#efe3d3"/>
-<rect x="11.09" y="11.03" width="5.4" height="3.58" fill="#efe3d3"/>
-<rect x="0.05" y="3.47" width="16.44" height="1.21" fill="#f1ece4"/>
-<rect x="0.0" y="10.25" width="5.64" height="1.6" fill="#e4e4e4"/>
-<rect x="2.83" y="11.85" width="8.26" height="2.54" fill="#f1ece4"/>
-<rect x="16.82" y="0.0" width="3.08" height="3.62" fill="#e6eaf0"/>
-<rect x="16.82" y="3.63" width="3.08" height="3.05" fill="#e6eaf0"/>
-<rect x="16.82" y="6.64" width="3.08" height="5.49" fill="#e6eaf0"/>
-<polygon points="19.9,10.96 19.9,10.96 19.9,12.13 19.9,12.15 19.9,14.55 16.84,14.55 16.84,12.13 19.9,12.13" fill="#e6eaf0"/>
-<rect x="11.09" y="7.33" width="5.4" height="3.69" fill="#f3ead8"/>
-<rect x="5.67" y="9.93" width="1.9" height="2.0" fill="#f1e1e3"/>
-<line x1="2.47" y1="3.3" x2="2.47" y2="0.16" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<line x1="8.12" y1="3.3" x2="8.12" y2="0.16" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<line x1="13.51" y1="3.3" x2="13.51" y2="0.16" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<line x1="13.51" y1="14.44" x2="13.51" y2="11.19" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<rect x="0.8" y="0.7" width="0.7" height="1.89" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="1.7" y="0.69" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="0.95" y="0.15" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="2.9" y="0.7" width="0.7" height="1.89" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="3.8" y="0.69" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="3.05" y="0.15" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="5.19" y="1.49" width="0.45" height="0.7" rx="0.06" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
-<rect x="6.44" y="0.7" width="0.7" height="1.89" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="7.35" y="0.69" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="6.59" y="0.15" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="8.55" y="0.7" width="0.7" height="1.89" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="9.46" y="0.69" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="8.7" y="0.15" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="10.59" y="1.49" width="0.45" height="0.7" rx="0.06" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
-<rect x="11.84" y="0.7" width="0.7" height="1.89" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="12.74" y="0.69" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="11.99" y="0.15" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="13.94" y="0.7" width="0.7" height="1.89" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="14.84" y="0.69" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="14.09" y="0.15" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="15.99" y="1.49" width="0.45" height="0.7" rx="0.06" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
-<rect x="11.84" y="12.01" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="12.74" y="13.41" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="11.99" y="14.06" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="13.94" y="12.01" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="14.84" y="13.41" width="0.5" height="0.5" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="14.09" y="14.06" width="0.4" height="0.4" rx="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
-<rect x="15.99" y="12.51" width="0.45" height="0.7" rx="0.06" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
-<rect x="1.2" y="4.74" width="9.01" height="0.45" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
-<rect x="1.74" y="6.18" width="1.5" height="0.9" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
-<rect x="3.94" y="6.18" width="1.5" height="0.9" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
-<rect x="6.24" y="6.33" width="2.41" height="0.6" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
+<polygon points="0.0,0.0 19.9,0.0 19.9,1.759 19.9,1.759 19.9,11.36 19.9,13.29 9.55,13.29 9.55,16.38 0.0,16.38" fill="#f6f1ea"/>
+<polygon points="0.76,4.9 16.49,4.9 16.49,8.022 16.49,10.029 11.09,10.029 11.09,10.7 7.6,10.7 5.69,10.7 5.69,8.022 5.67,8.022 5.67,9.406 0.08,9.406 0.08,8.022 0.76,8.022" fill="#f8f2e6"/>
+<rect x="0.0" y="10.81" width="2.83" height="2.65" fill="#e3e9ee"/>
+<rect x="0.0" y="13.46" width="2.56" height="2.81" fill="#e3e9ee"/>
+<rect x="2.56" y="13.46" width="1.2" height="2.81" fill="#e3e9ee"/>
+<rect x="3.76" y="11.81" width="3.22" height="4.57" fill="#e2e2e2"/>
+<rect x="7.03" y="13.24" width="2.52" height="3.14" fill="#e2e2e2"/>
+<rect x="0.05" y="0.0" width="5.64" height="3.7" fill="#efe3d3"/>
+<rect x="5.69" y="0.0" width="5.4" height="3.7" fill="#efe3d3"/>
+<rect x="11.09" y="0.0" width="5.4" height="3.7" fill="#efe3d3"/>
+<rect x="11.09" y="10.037" width="5.4" height="3.423" fill="#efe3d3"/>
+<rect x="0.05" y="3.7" width="16.44" height="1.2" fill="#f1ece4"/>
+<rect x="0.0" y="9.199" width="5.4" height="1.501" fill="#e4e4e4"/>
+<rect x="2.83" y="10.7" width="8.26" height="2.54" fill="#f1ece4"/>
+<rect x="16.82" y="0.0" width="3.08" height="3.849" fill="#e6eaf0"/>
+<rect x="16.82" y="3.859" width="3.08" height="2.659" fill="#e6eaf0"/>
+<rect x="16.82" y="6.485" width="3.08" height="4.495" fill="#e6eaf0"/>
+<polygon points="19.9,9.98 19.9,9.98 19.9,10.98 19.9,11.0 19.9,13.4 16.84,13.4 16.84,10.98 19.9,10.98" fill="#e6eaf0"/>
+<rect x="11.09" y="5.4" width="5.4" height="4.64" fill="#f3ead8"/>
+<rect x="5.4" y="8.3" width="1.6" height="2.4" fill="#f1e1e3"/>
+<rect x="1.74" y="6.113" width="1.5" height="0.728" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
+<rect x="3.94" y="6.113" width="1.5" height="0.728" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
+<rect x="6.24" y="6.235" width="2.41" height="0.485" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
 <g id="proposed">
-<rect x="6.05" y="4.74" width="1.15" height="0.5" fill="#d9c2a3" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="0.05" y="4.68" width="0.71" height="3.86" fill="#f3d9a8" stroke="#b08a3a" stroke-width="0.04"/>
-<rect x="0.95" y="8.7" width="4.7" height="1.55" fill="#e6ecdf"/>
-<rect x="1.00" y="9.38" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="1.20" y="8.8" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="1.93" y="9.38" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="2.13" y="8.8" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="2.86" y="9.38" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="3.06" y="8.8" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="3.79" y="9.38" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="3.99" y="8.8" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="4.72" y="9.38" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="4.92" y="8.8" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
-<circle cx="1.89" cy="9.55" r="0.2" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
-<circle cx="2.82" cy="9.55" r="0.2" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
-<circle cx="3.75" cy="9.55" r="0.2" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
-<circle cx="4.68" cy="9.55" r="0.2" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="2.35" y="5.19" width="1.9" height="0.12" fill="#2b2622"/>
-<ellipse cx="13.2" cy="7.0" rx="1.5" ry="0.75" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/><ellipse cx="13.2" cy="7.0" rx="0.85" ry="0.24" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="7.2" y="4.74" width="2.2" height="0.5" fill="#8d4b32" stroke="#2f6b4f" stroke-width="0.05"/>
-<line x1="8.3" y1="5.4" x2="8.3" y2="11.2" stroke="#8d4b32" stroke-width="0.04" stroke-dasharray="0.12 0.16"/>
-<path d="M11.09 11.03 L11.09 10.58 Q11.09 9.78 11.89 9.78 L13.3 9.78 L13.3 10.28 L12.09 10.28 Q11.59 10.28 11.59 10.78 L11.59 11.03 Z" fill="#f3d9a8" stroke="#2f6b4f" stroke-width="0.05"/>
-<circle cx="12.7" cy="10.63" r="0.18" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="11.9" y="10.88" width="1.3" height="0.12" fill="#8d4b32" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="13.50" y="10.9" width="0.3" height="0.09" fill="#c9a23a" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="13.90" y="10.9" width="0.3" height="0.09" fill="#c9a23a" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="14.30" y="10.9" width="0.3" height="0.09" fill="#c9a23a" stroke="#2f6b4f" stroke-width="0.05"/>
-<rect x="14.70" y="10.9" width="0.3" height="0.09" fill="#c9a23a" stroke="#2f6b4f" stroke-width="0.05"/>
-<g stroke="#2f6b4f" stroke-width="0.12" stroke-linecap="butt" stroke-dasharray="0.06 0.08"><line x1="7.57" y1="9.85" x2="7.57" y2="11.85"/><line x1="5.67" y1="9.85" x2="5.67" y2="10.25"/></g>
-<rect x="7.02" y="9.95" width="0.5" height="1.8" fill="#fff" stroke="#a06f78" stroke-width="0.045"/>
-<circle cx="6.72" cy="10.4" r="0.2" fill="#fff" stroke="#a06f78" stroke-width="0.035"/>
-<circle cx="6.72" cy="11.3" r="0.2" fill="#fff" stroke="#a06f78" stroke-width="0.035"/>
-<polyline points="0.13,3.25 2.47,3.25" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<polyline points="2.47,2.8 4.45,2.8 4.45,0.12" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<rect x="0.17" y="2.7" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="0.42" y="3.03" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<rect x="3.89" y="2.22" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="4.14" y="2.55" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<polyline points="5.7700000000000005,3.25 8.12,3.25" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<polyline points="8.12,2.8 10.10,2.8 10.10,0.12" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<rect x="5.81" y="2.7" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="6.06" y="3.03" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<rect x="9.54" y="2.22" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="9.79" y="2.55" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<polyline points="11.17,3.25 13.51,3.25" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<polyline points="13.51,2.8 15.49,2.8 15.49,0.12" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<rect x="11.21" y="2.7" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="11.46" y="3.03" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<rect x="14.93" y="2.22" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="15.18" y="2.55" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<polyline points="11.17,11.36 13.51,11.36" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<polyline points="13.51,11.81 15.49,11.81 15.49,14.49" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
-<rect x="11.21" y="11.41" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="11.46" y="11.74" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<rect x="14.93" y="11.89" width="0.5" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
-<text x="15.18" y="12.22" font-size="0.2" fill="#5a4f45" text-anchor="middle">락커</text>
-<rect x="16.36" y="6.55" width="0.1" height="1.9" fill="#2b2622"/>
-<text x="16.2" y="7.3" font-size="0.26" fill="#5a4f45" text-anchor="middle" transform="rotate(-90 16.2 7.3)">TV</text>
-<rect x="12.3" y="4.72" width="1.0" height="0.1" fill="#3f6b7a"/>
+<rect x="1.2" y="4.9" width="9.0" height="0.45" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
+<rect x="0.05" y="4.9" width="1.15" height="0.1" fill="#2b2622"/>
+<rect x="0.05" y="5.05" width="0.5" height="0.8" rx="0.08" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="0.05" y="6.25" width="0.5" height="0.8" rx="0.08" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="0.05" y="7.45" width="0.5" height="0.8" rx="0.08" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<circle cx="0.3" cy="6.05" r="0.2" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
+<circle cx="0.3" cy="7.25" r="0.2" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="2.25" y="5.35" width="1.9" height="0.08" fill="#2b2622"/>
+<rect x="4.55" y="4.9" width="1.2" height="0.6" fill="#d9c2a3" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="4.65" y="4.98" width="0.35" height="0.45" fill="#2b2622"/>
+<rect x="5.1" y="5.05" width="0.55" height="0.35" fill="#efe6d6" stroke="#8a7d70" stroke-width="0.03"/>
+<rect x="1.10" y="8.35" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="1.30" y="7.85" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="2.22" y="8.35" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="2.42" y="7.85" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="3.34" y="8.35" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="3.54" y="7.85" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="4.46" y="8.35" width="0.85" height="0.85" rx="0.2" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="4.66" y="7.85" width="0.45" height="0.5" rx="0.08" fill="#cfdcc4" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="12.6" y="6.1" width="0.85" height="2.0" rx="0.22" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<line x1="12.7" y1="6.77" x2="13.2" y2="6.77" stroke="#2f6b4f" stroke-width="0.03"/>
+<line x1="12.7" y1="7.43" x2="13.2" y2="7.43" stroke="#2f6b4f" stroke-width="0.03"/>
+<rect x="13.85" y="6.75" width="0.8" height="0.7" rx="0.15" fill="#e9e1d6" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="13.85" y="5.8" width="0.8" height="0.8" rx="0.3" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/><rect x="13.85" y="7.6" width="0.8" height="0.8" rx="0.3" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="6.4" y="4.95" width="2.2" height="0.38" fill="#8d4b32" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="8.65" y="4.95" width="1.5" height="0.38" fill="#f6e2b8" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="6.6" y="5.35" width="1.8" height="0.42" rx="0.08" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<line x1="7.5" y1="5.4" x2="7.5" y2="10.1" stroke="#8d4b32" stroke-width="0.04" stroke-dasharray="0.12 0.16"/>
+<rect x="11.0" y="9.3" width="0.1" height="1.4" fill="#2b2622"/>
+<rect x="9.6" y="9.4" width="0.6" height="1.2" rx="0.06" fill="#f3d9a8" stroke="#a9812f" stroke-width="0.04"/>
+<g stroke="#2f6b4f" stroke-width="0.12" stroke-linecap="butt" stroke-dasharray="0.06 0.08"><line x1="7.0" y1="8.3" x2="7.0" y2="10.7"/></g>
+<rect x="6.45" y="8.5" width="0.5" height="2.1" fill="#fff" stroke="#a06f78" stroke-width="0.045"/>
+<circle cx="6.15" cy="8.9" r="0.2" fill="#fff" stroke="#a06f78" stroke-width="0.035"/>
+<circle cx="6.15" cy="9.55" r="0.2" fill="#fff" stroke="#a06f78" stroke-width="0.035"/>
+<circle cx="6.15" cy="10.2" r="0.2" fill="#fff" stroke="#a06f78" stroke-width="0.035"/>
+<rect x="1.6" y="9.2" width="0.08" height="0.65" fill="#2b2622"/>
+<rect x="0.15" y="9.9" width="0.7" height="0.7" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="1.2" cy="9.6" r="0.28" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="1.17" y="0.6" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="1.52" cy="0.32" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="1.92" y="1.1" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="3.87" y="0.6" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="4.22" cy="0.32" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="3.32" y="1.1" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="2.65" y="0.08" width="0.45" height="0.6" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
+<line x1="2.87" y1="0.8" x2="2.87" y2="2.5" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M0.11 0.95 A0.95 0.95 0 0 0 1.00 0.06" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M4.44 0.06 A0.95 0.95 0 0 0 5.33 0.95" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<text x="0.45" y="0.42" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<text x="4.99" y="0.42" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<rect x="6.69" y="0.6" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="7.04" cy="0.32" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="7.44" y="1.1" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="9.39" y="0.6" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="9.74" cy="0.32" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="8.84" y="1.1" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="8.17" y="0.08" width="0.45" height="0.6" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
+<line x1="8.39" y1="0.8" x2="8.39" y2="2.5" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M6.05 0.95 A0.95 0.95 0 0 0 6.94 0.06" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M9.84 0.06 A0.95 0.95 0 0 0 10.73 0.95" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<text x="6.39" y="0.42" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<text x="10.39" y="0.42" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<rect x="12.09" y="0.6" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="12.44" cy="0.32" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="12.84" y="1.1" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="14.79" y="0.6" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="15.14" cy="0.32" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="14.24" y="1.1" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="13.57" y="0.08" width="0.45" height="0.6" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
+<line x1="13.79" y1="0.8" x2="13.79" y2="2.5" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M11.45 0.95 A0.95 0.95 0 0 0 12.34 0.06" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M15.54 0.06 A0.95 0.95 0 0 0 16.43 0.95" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<text x="11.79" y="0.42" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<text x="16.09" y="0.42" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<rect x="12.09" y="10.96" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="12.44" cy="13.14" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="12.84" y="11.86" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="14.79" y="10.96" width="0.7" height="1.9" rx="0.06" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<circle cx="15.14" cy="13.14" r="0.2" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="14.24" y="11.86" width="0.5" height="0.5" rx="0.05" fill="#fff" stroke="#8a7d70" stroke-width="0.04"/>
+<rect x="13.57" y="12.78" width="0.45" height="0.6" fill="#d6e4ea" stroke="#5f7f8c" stroke-width="0.04"/>
+<line x1="13.79" y1="12.66" x2="13.79" y2="10.96" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M11.15 12.51 A0.95 0.95 0 0 1 12.04 13.4" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<path d="M15.54 13.4 A0.95 0.95 0 0 1 16.43 12.51" fill="none" stroke="#b08d57" stroke-width="0.07" stroke-dasharray="0.18 0.12"/>
+<text x="11.49" y="13.11" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<text x="16.09" y="13.11" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>
+<rect x="11.19" y="10.14" width="0.9" height="0.55" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="15.19" y="10.14" width="1.2" height="0.55" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="11.64" y="10.49" font-size="0.2" fill="#5a4f45" text-anchor="middle">옷장</text>
+<text x="15.79" y="10.49" font-size="0.2" fill="#5a4f45" text-anchor="middle">수납</text>
+<rect x="5.39" y="0.13" width="0.6" height="0.65" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="5.69" y="0.52" font-size="0.15" fill="#5a4f45" text-anchor="middle">옷장</text>
+<path d="M5.99 0.13 l0.40 0" stroke="#2b2622" stroke-width="0.03"/>
+<path d="M6.39 0.13 A0.4 0.4 0 0 1 5.99 0.53" fill="none" stroke="#2b2622" stroke-width="0.025"/>
+<rect x="5.39" y="0.95" width="0.6" height="0.62" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="5.69" y="1.32" font-size="0.15" fill="#5a4f45" text-anchor="middle">옷장</text>
+<path d="M5.39 0.95 l-0.40 0" stroke="#2b2622" stroke-width="0.03"/>
+<path d="M4.99 0.95 A0.4 0.4 0 0 0 5.39 1.35" fill="none" stroke="#2b2622" stroke-width="0.025"/>
+<rect x="5.34" y="1.65" width="0.7" height="0.78" fill="#2b2622"/>
+<rect x="5.39" y="2.57" width="0.6" height="0.47" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="5.69" y="2.86" font-size="0.15" fill="#5a4f45" text-anchor="middle">수납</text>
+<path d="M5.99 2.57 l0.40 0" stroke="#2b2622" stroke-width="0.03"/>
+<path d="M6.39 2.57 A0.4 0.4 0 0 1 5.99 2.97" fill="none" stroke="#2b2622" stroke-width="0.025"/>
+<rect x="5.39" y="3.13" width="0.6" height="0.52" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="5.69" y="3.45" font-size="0.15" fill="#5a4f45" text-anchor="middle">수납</text>
+<rect x="10.79" y="0.13" width="0.6" height="0.65" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="11.09" y="0.52" font-size="0.15" fill="#5a4f45" text-anchor="middle">옷장</text>
+<path d="M11.39 0.13 l0.40 0" stroke="#2b2622" stroke-width="0.03"/>
+<path d="M11.79 0.13 A0.4 0.4 0 0 1 11.39 0.53" fill="none" stroke="#2b2622" stroke-width="0.025"/>
+<rect x="10.79" y="0.95" width="0.6" height="0.62" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="11.09" y="1.32" font-size="0.15" fill="#5a4f45" text-anchor="middle">옷장</text>
+<path d="M10.79 0.95 l-0.40 0" stroke="#2b2622" stroke-width="0.03"/>
+<path d="M10.39 0.95 A0.4 0.4 0 0 0 10.79 1.35" fill="none" stroke="#2b2622" stroke-width="0.025"/>
+<rect x="10.74" y="1.65" width="0.7" height="0.78" fill="#2b2622"/>
+<rect x="10.79" y="2.57" width="0.6" height="0.47" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="11.09" y="2.86" font-size="0.15" fill="#5a4f45" text-anchor="middle">수납</text>
+<path d="M11.39 2.57 l0.40 0" stroke="#2b2622" stroke-width="0.03"/>
+<path d="M11.79 2.57 A0.4 0.4 0 0 1 11.39 2.97" fill="none" stroke="#2b2622" stroke-width="0.025"/>
+<rect x="10.79" y="3.13" width="0.6" height="0.52" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<text x="11.09" y="3.45" font-size="0.15" fill="#5a4f45" text-anchor="middle">수납</text>
+<rect x="0.1" y="0.08" width="0.75" height="0.5" fill="#d9d2c4" stroke="#2f6b4f" stroke-width="0.05"/>
+<rect x="12.15" y="6.1" width="0.35" height="2.0" rx="0.1" fill="#9db88f" stroke="#4f7a4a" stroke-width="0.05"/>
+<rect x="11.3" y="6.1" width="0.85" height="2.0" rx="0.22" fill="#fff" stroke="#2f6b4f" stroke-width="0.05"/>
+<line x1="11.65" y1="6.77" x2="12.05" y2="6.77" stroke="#2f6b4f" stroke-width="0.03"/>
+<line x1="11.65" y1="7.43" x2="12.05" y2="7.43" stroke="#2f6b4f" stroke-width="0.03"/>
+<circle cx="16.15" cy="5.3" r="0.25" fill="#9db88f" stroke="#4f7a4a" stroke-width="0.05"/>
+<circle cx="16.15" cy="8.3" r="0.25" fill="#9db88f" stroke="#4f7a4a" stroke-width="0.05"/>
+<rect x="16.36" y="6.35" width="0.1" height="1.5" fill="#2b2622"/>
+<text x="16.15" y="7.1" font-size="0.26" fill="#5a4f45" text-anchor="middle" transform="rotate(-90 16.15 7.1)">TV 75"</text>
 </g>
 <g fill="none" stroke="#2b2622" stroke-width="0.12" stroke-linejoin="miter">
-<rect x="0.0" y="11.96" width="2.83" height="2.65" />
-<rect x="0.0" y="14.61" width="2.56" height="2.81" />
-<rect x="3.76" y="12.96" width="3.22" height="4.57" />
-<rect x="7.03" y="14.39" width="2.52" height="3.14" />
-<rect x="0.05" y="0.0" width="5.64" height="3.47" />
-<rect x="5.69" y="0.0" width="5.4" height="3.47" />
-<rect x="11.09" y="0.0" width="5.4" height="3.47" />
-<rect x="11.09" y="11.03" width="5.4" height="3.58" />
-<rect x="0.0" y="10.25" width="5.64" height="1.6" />
-<rect x="16.82" y="0.0" width="3.08" height="3.62" />
-<rect x="16.82" y="3.63" width="3.08" height="3.05" />
-<rect x="16.82" y="6.64" width="3.08" height="5.49" />
-<polygon points="19.9,10.96 19.9,10.96 19.9,12.13 19.9,12.15 19.9,14.55 16.84,14.55 16.84,12.13 19.9,12.13"/>
+<rect x="0.0" y="10.81" width="2.83" height="2.65" />
+<rect x="0.0" y="13.46" width="2.56" height="2.81" />
+<rect x="3.76" y="11.81" width="3.22" height="4.57" />
+<rect x="7.03" y="13.24" width="2.52" height="3.14" />
+<rect x="0.05" y="0.0" width="5.64" height="3.7" />
+<rect x="5.69" y="0.0" width="5.4" height="3.7" />
+<rect x="11.09" y="0.0" width="5.4" height="3.7" />
+<rect x="11.09" y="10.037" width="5.4" height="3.423" />
+<rect x="0.0" y="9.199" width="5.4" height="1.501" />
+<rect x="16.82" y="0.0" width="3.08" height="3.849" />
+<rect x="16.82" y="3.859" width="3.08" height="2.659" />
+<rect x="16.82" y="6.485" width="3.08" height="4.495" />
+<polygon points="19.9,9.98 19.9,9.98 19.9,10.98 19.9,11.0 19.9,13.4 16.84,13.4 16.84,10.98 19.9,10.98"/>
 </g>
-<polygon points="0.0,0.0 19.9,0.0 19.9,1.65 19.9,1.65 19.9,12.51 19.9,14.44 9.55,14.44 9.55,17.53 0.0,17.53" fill="none" stroke="#2b2622" stroke-width="0.2"/>
-<rect x="16.49" y="0.0" width="0.33" height="14.61" fill="#9fb6c4" stroke="#2b2622" stroke-width="0.05"/>
-<rect x="2.83" y="11.9" width="8.26" height="0.3" fill="#bcd6e6" stroke="#5f7f8c" stroke-width="0.05"/>
-<rect x="7.6" y="11.870000000000001" width="1.4" height="0.36" fill="#ffffff" stroke="#5f7f8c" stroke-width="0.05"/>
-<path d="M8.3 12.62 h1.5 m0 0 l-0.25 -0.13 m0.25 0.13 l-0.25 0.13" fill="none" stroke="#5f7f8c" stroke-width="0.05"/>
-<rect x="5.67" y="11.88" width="1.9" height="0.33999999999999997" fill="#2b2622"/>
+<polygon points="0.0,0.0 19.9,0.0 19.9,1.759 19.9,1.759 19.9,11.36 19.9,13.29 9.55,13.29 9.55,16.38 0.0,16.38" fill="none" stroke="#2b2622" stroke-width="0.2"/>
+<rect x="16.49" y="0.0" width="0.33" height="13.46" fill="#9fb6c4" stroke="#2b2622" stroke-width="0.05"/>
+<rect x="2.83" y="10.75" width="8.26" height="0.3" fill="#bcd6e6" stroke="#5f7f8c" stroke-width="0.05"/>
+<rect x="2.83" y="10.73" width="8.26" height="0.33999999999999997" fill="#2b2622"/>
+<rect x="7.0" y="10.72" width="1.0" height="0.36" fill="#bcd6e6" stroke="#5f7f8c" stroke-width="0.05"/>
+<path d="M7.5 11.47 h1.1 m0 0 l-0.25 -0.13 m0.25 0.13 l-0.25 0.13" fill="none" stroke="#5f7f8c" stroke-width="0.05"/>
 <g>
-<line x1="4.68" y1="3.47" x2="5.58" y2="3.47" stroke="#f6f1ea" stroke-width="0.2"/>
-<path d="M5.58 3.47 L5.58 2.57 A0.9 0.9 0 0 1 4.68 3.47" fill="none" stroke="#2b2622" stroke-width="0.04"/>
-<line x1="10.09" y1="3.47" x2="10.99" y2="3.47" stroke="#f6f1ea" stroke-width="0.2"/>
-<path d="M10.99 3.47 L10.99 2.57 A0.9 0.9 0 0 1 10.09 3.47" fill="none" stroke="#2b2622" stroke-width="0.04"/>
-<line x1="15.49" y1="3.47" x2="16.39" y2="3.47" stroke="#f6f1ea" stroke-width="0.2"/>
-<path d="M16.39 3.47 L16.39 2.57 A0.9 0.9 0 0 1 15.49 3.47" fill="none" stroke="#2b2622" stroke-width="0.04"/>
-<line x1="15.45" y1="11.03" x2="16.35" y2="11.03" stroke="#f6f1ea" stroke-width="0.2"/>
-<path d="M16.35 11.03 L16.35 11.93 A0.9 0.9 0 0 0 15.45 11.03" fill="none" stroke="#2b2622" stroke-width="0.04"/>
-<line x1="0.11" y1="10.25" x2="1.01" y2="10.25" stroke="#f6f1ea" stroke-width="0.2"/>
-<path d="M1.01 10.25 L1.01 11.15 A0.9 0.9 0 0 0 0.11 10.25" fill="none" stroke="#2b2622" stroke-width="0.04"/>
+<line x1="2.37" y1="3.7" x2="3.37" y2="3.7" stroke="#f6f1ea" stroke-width="0.2"/>
+<line x1="2.82" y1="3.82" x2="3.82" y2="3.82" stroke="#2b2622" stroke-width="0.07"/>
+<path d="M2.47 4.00 h0.5 l-0.12 -0.08 m0.12 0.08 l-0.12 0.08" fill="none" stroke="#2b2622" stroke-width="0.03"/>
+<line x1="7.89" y1="3.7" x2="8.89" y2="3.7" stroke="#f6f1ea" stroke-width="0.2"/>
+<line x1="8.34" y1="3.82" x2="9.34" y2="3.82" stroke="#2b2622" stroke-width="0.07"/>
+<path d="M7.99 4.00 h0.5 l-0.12 -0.08 m0.12 0.08 l-0.12 0.08" fill="none" stroke="#2b2622" stroke-width="0.03"/>
+<line x1="13.29" y1="3.7" x2="14.29" y2="3.7" stroke="#f6f1ea" stroke-width="0.2"/>
+<line x1="13.74" y1="3.82" x2="14.74" y2="3.82" stroke="#2b2622" stroke-width="0.07"/>
+<path d="M13.39 4.00 h0.5 l-0.12 -0.08 m0.12 0.08 l-0.12 0.08" fill="none" stroke="#2b2622" stroke-width="0.03"/>
+<line x1="13.29" y1="10.037" x2="14.29" y2="10.037" stroke="#f6f1ea" stroke-width="0.2"/>
+<line x1="13.74" y1="9.92" x2="14.74" y2="9.92" stroke="#2b2622" stroke-width="0.07"/>
+<path d="M13.39 9.74 h0.5 l-0.12 -0.08 m0.12 0.08 l-0.12 0.08" fill="none" stroke="#2b2622" stroke-width="0.03"/>
+<line x1="0.10" y1="9.199" x2="1.00" y2="9.199" stroke="#f6f1ea" stroke-width="0.2"/>
+<path d="M1.00 9.199 L1.00 10.10 A0.9 0.9 0 0 0 0.10 9.199" fill="none" stroke="#2b2622" stroke-width="0.04"/>
 </g>
-<rect x="16.47" y="3.74" width="0.37" height="0.9" fill="#f6f1ea" stroke="#2b2622" stroke-width="0.04"/>
 <g font-size="0.42" font-weight="700" fill="#2b2622" text-anchor="middle">
-<text x="2.9" y="2.95">관리실 1</text>
-<text x="8.4" y="2.95">관리실 2</text>
-<text x="13.8" y="2.95">관리실 3</text>
-<text x="13.8" y="12.25">관리실 4</text>
-<text x="8.3" y="4.2">관리실 복도</text>
-<text x="8.9" y="7.75">VIP 라운지</text>
-<text x="13.4" y="8.85">체험 대기</text>
-<text x="6.3" y="10.25">파우더룸</text>
-<text x="2.8" y="11.15">린넨·소독·재고</text>
-<text x="9.15" y="12.9">EV 홀</text>
-<text x="18.4" y="7.45">사무 구역</text>
-<text x="1.35" y="13.15">남 화장실</text>
-<text x="1.25" y="15.95">여 화장실</text>
-<text x="5.35" y="15.85">계단</text>
-<text x="8.3" y="16.15">승강기</text>
+<text x="2.87" y="3.092">관리실 1</text>
+<text x="8.39" y="3.092">관리실 2</text>
+<text x="13.79" y="3.092">관리실 3</text>
+<text x="13.8" y="11.1">관리실 4</text>
+<text x="8.3" y="4.424">관리실 복도</text>
+<text x="9.3" y="7.383">VIP 라운지</text>
+<text x="3.9" y="10.255">린넨·소독·재고</text>
+<text x="9.15" y="11.75">EV 홀</text>
+<text x="18.4" y="7.141">사무 구역</text>
+<text x="1.35" y="12.0">남 화장실</text>
+<text x="1.25" y="14.8">여 화장실</text>
+<text x="5.35" y="14.7">계단</text>
+<text x="8.3" y="15.0">승강기</text>
 </g>
 <g font-size="0.3" fill="#5a4f45" text-anchor="middle">
-<text x="7.0" y="4.5"></text>
-<text x="8.3" y="5.55">브랜드 월</text>
-<text x="14.1" y="10.65">인증서</text>
-<text x="10.35" y="10.25">접수대</text>
-<text x="3.3" y="5.6">TV</text>
-<text x="3.3" y="8.4">셀프 발마사지 5석</text>
-<text x="3.9" y="6.0">아일랜드 매대</text>
-<text x="12.8" y="5.0">호출 화면</text>
-<text x="8.3" y="12.5">유리 자동문</text>
-<text x="9.15" y="13.35">고객 출입</text>
-<text x="6.3" y="11.4">화장대 2석</text>
-<text x="18.4" y="8.0">(별도 구역)</text>
-<text x="5.42" y="2.5">세면</text>
-<text x="17.25" y="4.15">문</text>
-<text x="0.44" y="6.6" transform="rotate(-90 0.44 6.6)">윈도 진열대</text>
-<text x="6.62" y="5.55">커피</text>
-<text x="7.45" y="7.3">테스터 바</text>
+<text x="7.5" y="11.35">유리 자동문 1.0m</text>
+<text x="9.15" y="12.2">고객 출입</text>
+<text x="18.4" y="7.586">(별도 구역)</text>
+<text x="2.87" y="1.013">세면대</text>
+<text x="0.85" y="6.6" transform="rotate(-90 0.85 6.6)">창가 벤치</text>
+<text x="3.2" y="5.75">TV 85"</text>
+<text x="3.0" y="7.7">셀프 발마사지 4석</text>
+<text x="5.15" y="5.85">커피머신</text>
+<text x="7.5" y="6.05">브랜드 월 · 벤치</text>
+<text x="9.4" y="5.7">화장품 진열</text>
+<text x="10.3" y="9.15">결제·상담 프론트</text>
+<text x="14.25" y="9.45">관리실 4 가는 길</text>
+<text x="13.03" y="8.45">3인 소파</text>
+<text x="11.72" y="8.45">3인 소파</text>
+<text x="6.2" y="8.1">파우더룸 1.6 × 2.4m</text>
+<text x="14.0" y="5.35" font-size="0.42" font-weight="700" fill="#2b2622" text-anchor="middle">체험 대기</text>
+<text x="1.2" y="10.5" font-size="0.36" font-weight="700" fill="#2b2622" text-anchor="middle">세탁</text>
 </g>
 <g id="cameras">
-<use href="#cam" transform="translate(8.3,11.15) rotate(0)"/>
-<use href="#cam" transform="translate(6.6,7.35) rotate(250)"/>
-<use href="#cam" transform="translate(15.9,8.15) rotate(300)"/>
-<use href="#cam" transform="translate(9.0,3.05) rotate(30)"/>
+<use href="#cam" transform="translate(7.5,10.134) rotate(0)"/>
+<use href="#cam" transform="translate(6.2,8.273) rotate(190)"/>
+<use href="#cam" transform="translate(15.9,7.707) rotate(300)"/>
+<use href="#cam" transform="translate(9.0,3.252) rotate(30)"/>
 <g font-size="0.34" font-weight="700" fill="#fff" text-anchor="middle">
-<text x="8.3" y="11.27">1</text>
-<text x="6.6" y="7.47">2</text>
-<text x="15.9" y="8.27">3</text>
-<text x="9.0" y="3.17">4</text>
+<text x="7.5" y="10.25">1</text>
+<text x="6.2" y="8.39">2</text>
+<text x="15.9" y="7.83">3</text>
+<text x="9.0" y="3.37">4</text>
 </g></g>
 <g stroke="#9a8f85" stroke-width="0.03" fill="#7a7068" font-size="0.32" text-anchor="middle">
 <line x1="0" y1="-0.35" x2="16.49" y2="-0.35"/>
@@ -212,14 +250,14 @@
 <text x="13.79" y="-0.5" stroke="none">5.40m</text>
 <line x1="-0.4" y1="0" x2="-0.4" y2="14.61"/>
 <line x1="-0.55" y1="0.0" x2="-0.25" y2="0.0"/>
-<line x1="-0.55" y1="3.47" x2="-0.25" y2="3.47"/>
-<line x1="-0.55" y1="4.68" x2="-0.25" y2="4.68"/>
-<line x1="-0.55" y1="11.85" x2="-0.25" y2="11.85"/>
-<line x1="-0.55" y1="14.61" x2="-0.25" y2="14.61"/>
-<text x="-0.95" y="1.85" stroke="none">3.47</text>
-<text x="-0.95" y="4.15" stroke="none">1.21</text>
-<text x="-0.95" y="8.35" stroke="none">7.17</text>
-<text x="-0.95" y="13.35" stroke="none">2.76</text>
+<line x1="-0.55" y1="3.7" x2="-0.25" y2="3.7"/>
+<line x1="-0.55" y1="4.9" x2="-0.25" y2="4.9"/>
+<line x1="-0.55" y1="10.7" x2="-0.25" y2="10.7"/>
+<line x1="-0.55" y1="13.46" x2="-0.25" y2="13.46"/>
+<text x="-0.95" y="1.97" stroke="none">3700</text>
+<text x="-0.95" y="4.38" stroke="none">1200</text>
+<text x="-0.95" y="7.89" stroke="none">5800</text>
+<text x="-0.95" y="12.20" stroke="none">2.76</text>
 <line x1="0" y1="18.2" x2="16.49" y2="18.2"/><line x1="0" y1="18.05" x2="0" y2="18.35"/><line x1="16.49" y1="18.05" x2="16.49" y2="18.35"/>
 <text x="8.25" y="18.7" stroke="none">고객 구역 폭 16.49m</text>
 </g>

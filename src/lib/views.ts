@@ -49,7 +49,7 @@ export function loadPlanMarkup(conceptId: string): string {
     }
     if (line.startsWith("<svg") || line === "</svg>") continue;
     if (line.startsWith('<rect x="-1.6"')) continue;
-    if (line.includes("매장 평면도 (") || line.includes("가정값이고")) continue;
+    if (line.includes("매장 평면도 (") || line.startsWith('<text x="0" y="-0.85"')) continue;
     if (line.startsWith('<g id="cameras">')) {
       skipUntil = "</g></g>";
       continue;
