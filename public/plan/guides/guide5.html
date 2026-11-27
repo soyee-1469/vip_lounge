@@ -1,0 +1,88 @@
+<!doctype html><meta charset="utf-8"><title>구도 가이드</title>
+<style>html,body{margin:0;background:#fff}canvas{display:block}</style>
+<canvas id="c" width="1536" height="1024"></canvas>
+<script>
+// 도면(make_plan.py, 2026-11-27 실측 배치) 좌표로 만든 구도 가이드. 단위 m, x 오른쪽, y 아래(도면과 같음), z 위.
+// ?view=entry|license|foot|coffee|lounge-tv|display 로 카메라를 고른다. 이미지 생성 때 레퍼런스로 첨부한다.
+const W=1536,H=1024,HF=(+new URLSearchParams(location.search).get('fov')||74)*Math.PI/180,F=(W/2)/Math.tan(HF/2),CH=((new URLSearchParams(location.search).get('view')||'').startsWith('aerial'))?1.0:2.5;
+const AER=(new URLSearchParams(location.search).get('view')||'').startsWith('aerial'),DH=AER?1.0:2.1;const SALES=new URLSearchParams(location.search).get('variant')==='sales';const boxes=[];
+const B=(x,y,w,h,z0,z1,c)=>boxes.push({x,y,w,h,z0,z1,c});
+const WALL='#e9e4da',WOOD='#b08a5f',SEAT='#d8c7ac',DARK='#4a4038',GOLD='#d6b25a',GLASS='#bcd3d8',GREEN='#b9cba6',STONE='#cfc6b6',BRAND='#f3e7c9';
+function wallH(y,x1,x2,gaps=[],t=0.12){let c=x1;for(const [a,b,hh] of gaps.sort((p,q)=>p[0]-q[0])){if(a>c)B(c,y-t/2,a-c,t,0,CH,WALL);if(hh<CH)B(a,y-t/2,b-a,t,hh,CH,WALL);c=b;}if(x2>c)B(c,y-t/2,x2-c,t,0,CH,WALL);}
+function wallV(x,y1,y2,gaps=[],t=0.12){let c=y1;for(const [a,b,hh] of gaps.sort((p,q)=>p[0]-q[0])){if(a>c)B(x-t/2,c,t,a-c,0,CH,WALL);if(hh<CH)B(x-t/2,a,t,b-a,hh,CH,WALL);c=b;}if(y2>c)B(x-t/2,c,t,y2-c,0,CH,WALL);}
+function chair(x,y,w,h,face,c=SEAT,sh=0.45,bh=0.85){B(x,y,w,h,0,sh,c);const t=0.2;if(face==='E')B(x,y,t,h,sh,bh,c);if(face==='W')B(x+w-t,y,t,h,sh,bh,c);if(face==='S')B(x,y,w,t,sh,bh,c);if(face==='N')B(x,y+h-t,w,t,sh,bh,c);}
+
+// ── 2026-11-27 실측 배치. 좌표는 make_plan.py의 SVG 좌표와 같다(관리실 3.7 / 복도 1.2 / 라운지 5.8) ──
+const PLANT='#7fa06f',BED='#ffffff',SINK='#9fc3d6',CURT='#e8dcc8',WHITE='#f4f1ea';
+const prisms=[];const PR=(pts,z0,z1,c)=>prisms.push({pts,z0,z1,c});
+const CYL=(cx,cy,r,z0,z1,c)=>{const pts=[];for(let k=0;k<20;k++){const a=k*Math.PI/10;pts.push([cx+r*Math.cos(a),cy+r*Math.sin(a)]);}PR(pts,z0,z1,c);};
+const CAP=z=>Math.min(z,CH);
+// 외벽과 관리실 줄
+wallH(0,0,16.49);wallV(0,0,10.7);wallV(5.69,0,3.7);wallV(11.09,0,3.7);wallV(16.49,0,3.7);
+wallH(3.7,0,16.49,[[2.37,3.37,2.1],[7.89,8.89,2.1],[13.29,14.29,2.1]]);
+for(const b of [3.37,8.89,14.29])B(b,3.76,1.0,0.05,0,CAP(2.1),WOOD);   // 미닫이 문짝: 복도 쪽, 동쪽으로 열린 상태
+B(16.45,3.7,0.08,6.34,0,CH,GLASS);                                     // 사무 구역 경계(유리)
+// 벽면 진열장 W9000 D450 H2100, 서쪽 끝 막는 벽
+B(1.2,4.9,3.35,0.45,0,DH,WOOD);B(5.75,4.9,4.45,0.45,0,DH,WOOD);B(0.05,4.9,1.15,0.1,0,CH,WALL);
+B(6.4,4.9,2.2,0.5,0,DH,'#b0603f');                                     // 브랜드 월
+for(const [sx,sw] of [[8.7,1.4]])for(const sz of [0.9,1.3,1.7])if(sz<DH)B(sx,5.35,sw,0.03,sz,sz+0.04,GOLD);   // 화장품 진열 칸(브랜드 월 오른쪽만)
+B(2.25,5.35,1.9,0.05,AER?0.25:0.9,AER?0.95:2.0,DARK);                  // TV 85"
+B(4.55,4.9,1.2,0.6,0,0.9,STONE);B(4.65,4.98,0.35,0.45,0.9,CAP(1.45),DARK);B(5.1,5.05,0.55,0.35,0.9,0.98,'#efe6d6');if(!AER)B(4.55,4.9,1.2,0.35,1.6,2.1,WOOD);  // 커피 칸: 하부장 + 머신 + 잔 트레이 + 상부장
+// 창가 벤치 3칸 + 사이 테이블 2개
+for(const y0 of [5.05,6.25,7.45])B(0.05,y0,0.5,0.8,0,0.45,SEAT);
+for(const cy of [6.05,7.25])CYL(0.3,cy,0.2,0,0.55,DARK);
+// 셀프 발마사지 4석: 관리동 벽에 등, TV 쪽(북)을 본다
+for(let i=0;i<4;i++){const x=1.1+1.12*i;chair(x,8.35,0.85,0.85,'N');B(x+0.2,7.85,0.45,0.5,0,0.45,GREEN);}
+// 관리동(린넨·소독·재고) + 세탁실
+wallH(9.2,0,5.4,[[0.1,1.0,2.1]]);wallV(5.4,9.2,10.7);B(1.56,9.2,0.08,0.65,0,CH,WALL);
+B(0.15,9.9,0.7,0.7,0,0.85,BED);CYL(1.2,9.6,0.28,0,CAP(1.2),BED);B(1.8,10.3,3.4,0.35,0,DH,WOOD);
+// 파우더룸 1.6 × 2.4: 동쪽 창살 벽, 화장대, 스툴 3
+for(let y=8.3;y<10.68;y+=0.13)B(6.96,y,0.08,0.05,0,CAP(1.8),WOOD);
+B(6.45,8.5,0.5,2.1,0,0.78,STONE);for(const cy of [8.9,9.55,10.2])CYL(6.15,cy,0.18,0,0.45,SEAT);
+// EV 홀 쪽 벽 + 유리 자동문 1.0m
+wallH(10.7,0,11.09,[[7.0,8.0,CH]]);B(7.0,10.67,1.0,0.06,0,CH,GLASS);
+// 결제·상담 프론트: 뒷벽 + 카운터
+B(10.95,9.3,0.1,1.4,0,CH,WALL);B(9.6,9.4,0.6,1.2,0,1.05,STONE);
+// 체험 대기: 3인 소파 2개 등 맞대고 사이 플랜터, 테이블, 암체어 2, 동쪽 벽 TV 75"
+chair(12.6,6.1,0.85,2.0,'E');chair(11.3,6.1,0.85,2.0,'W');B(12.15,6.1,0.35,2.0,0,0.9,PLANT);
+B(13.85,6.75,0.8,0.7,0,0.4,DARK);chair(13.85,5.8,0.8,0.8,'S');chair(13.85,7.6,0.8,0.8,'N');
+B(16.36,6.35,0.06,1.5,AER?0.3:1.1,AER?0.95:2.15,DARK);
+for(const [px,py] of [[16.15,5.3],[16.15,8.3]])CYL(px,py,0.25,0,1.3,PLANT);
+// 관리실 4: 북쪽 벽 가운데 미닫이(문짝은 체험 대기 쪽)
+wallH(10.04,11.09,16.49,[[13.29,14.29,2.1]]);B(14.29,9.93,1.0,0.05,0,CAP(2.1),WOOD);
+wallV(11.09,10.04,13.46);wallV(16.49,10.04,13.46);wallH(13.46,11.09,16.49);
+// 관리실 안: 베드 2, 머리맡 의자, 카트, 세면대, 가운데 커튼, 모서리 탈의 커튼, 옷장·수납
+function room(x0,w,top,depth,flip){const Y=(v,h=0)=>flip?top+depth-v-h:top+v;const m=x0+w/2;
+ for(const [bx,cx] of [[m-1.7,m-2.35],[m+1.0,m+1.85]]){B(bx,Y(0.6,1.9),0.7,1.9,0,0.65,BED);CYL(bx+0.35,Y(0.32),0.2,0,0.5,DARK);B(cx,Y(1.1,0.5),0.5,0.5,0,0.9,DARK);}
+ B(m-0.22,Y(0.08,0.6),0.45,0.6,0,0.85,SINK);B(m-0.02,Y(0.8,1.7),0.04,1.7,0,CAP(2.0),CURT);
+ for(const [cx0,sx] of [[x0,1],[x0+w,-1]])for(let k=0;k<8;k++){const a=k*Math.PI/16,b2=(k+1)*Math.PI/16;const p=(t)=>[cx0+sx*0.95*Math.sin(t),Y(0.95*Math.cos(t))];const P1=p(a),P2=p(b2);PR([[P1[0],P1[1]],[P2[0],P2[1]],[P2[0]+0.02,P2[1]+0.02],[P1[0]+0.02,P1[1]+0.02]],0,CAP(2.0),CURT);}
+ B(x0+0.1,Y(depth-0.65,0.55),0.9,0.55,0,DH,WOOD);B(x0+w-1.3,Y(depth-0.65,0.55),1.2,0.55,0,CAP(1.0),WOOD);}
+for(const [x0,w] of [[0.05,5.64],[5.69,5.4],[11.09,5.4]])room(x0,w,0,3.7,false);
+room(11.09,5.4,10.04,3.42,true);
+
+const VIEWS={
+ 'aerial':{x:8.2,y:16.6,h:0,ez:18,pitch:61},'aerialL':{x:-2.6,y:6.8,h:90,ez:18,pitch:59},'aerialR':{x:19.2,y:6.8,h:270,ez:18,pitch:59},'aerialB':{x:8.2,y:-3.0,h:180,ez:18,pitch:59},
+};
+
+const q=new URLSearchParams(location.search);const V=VIEWS[q.get('view')||'entry'];
+const hr=V.h*Math.PI/180,fw=[Math.sin(hr),-Math.cos(hr)],rt=[Math.cos(hr),Math.sin(hr)],EYE=1.5;
+const PT=(V.pitch||0)*Math.PI/180,EZ=V.ez||EYE;const cam=(p)=>{const dx=p[0]-V.x,dy=p[1]-V.y;const r=dx*rt[0]+dy*rt[1],u=p[2]-EZ,f=dx*fw[0]+dy*fw[1];return [r,u*Math.cos(PT)+f*Math.sin(PT),f*Math.cos(PT)-u*Math.sin(PT)];};
+const ctx=document.getElementById('c').getContext('2d');const img=ctx.createImageData(W,H);const zb=new Float32Array(W*H);
+for(let i=0;i<W*H;i++){img.data[i*4]=250;img.data[i*4+1]=248;img.data[i*4+2]=244;img.data[i*4+3]=255;}
+const NEAR=0.08;
+function clip(poly){const out=[];for(let i=0;i<poly.length;i++){const a=poly[i],b=poly[(i+1)%poly.length];const ain=a[2]>=NEAR,bin=b[2]>=NEAR;if(ain)out.push(a);if(ain!==bin){const t=(NEAR-a[2])/(b[2]-a[2]);out.push([a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1]),NEAR]);}}return out;}
+const proj=(p)=>[W/2+F*p[0]/p[2],H/2-F*p[1]/p[2],1/p[2]];
+function tri(a,b,c,col){const minx=Math.max(0,Math.floor(Math.min(a[0],b[0],c[0]))),maxx=Math.min(W-1,Math.ceil(Math.max(a[0],b[0],c[0]))),miny=Math.max(0,Math.floor(Math.min(a[1],b[1],c[1]))),maxy=Math.min(H-1,Math.ceil(Math.max(a[1],b[1],c[1])));const d=(b[1]-c[1])*(a[0]-c[0])+(c[0]-b[0])*(a[1]-c[1]);if(Math.abs(d)<1e-9)return;for(let y=miny;y<=maxy;y++)for(let x=minx;x<=maxx;x++){const w0=((b[1]-c[1])*(x-c[0])+(c[0]-b[0])*(y-c[1]))/d,w1=((c[1]-a[1])*(x-c[0])+(a[0]-c[0])*(y-c[1]))/d,w2=1-w0-w1;if(w0<-1e-4||w1<-1e-4||w2<-1e-4)continue;const iz=w0*a[2]+w1*b[2]+w2*c[2];const k=y*W+x;if(iz>zb[k]){zb[k]=iz;img.data[k*4]=col[0];img.data[k*4+1]=col[1];img.data[k*4+2]=col[2];}}}
+function quad(pts,col){const p=clip(pts.map(cam));if(p.length<3)return;const s=p.map(proj);for(let i=1;i<s.length-1;i++)tri(s[0],s[i],s[i+1],col);}
+function line(p,q2){let a=cam(p),b=cam(q2);if(a[2]<NEAR&&b[2]<NEAR)return;if(a[2]<NEAR){const t=(NEAR-a[2])/(b[2]-a[2]);a=[a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1]),NEAR];}if(b[2]<NEAR){const t=(NEAR-b[2])/(a[2]-b[2]);b=[b[0]+t*(a[0]-b[0]),b[1]+t*(a[1]-b[1]),NEAR];}const A=proj(a),Bp=proj(b);const n=Math.ceil(Math.max(Math.abs(Bp[0]-A[0]),Math.abs(Bp[1]-A[1])));if(n>20000)return;for(let i=0;i<=n;i++){const t=n?i/n:0,x=Math.round(A[0]+t*(Bp[0]-A[0])),y=Math.round(A[1]+t*(Bp[1]-A[1])),iz=A[2]+t*(Bp[2]-A[2]);for(let oy=0;oy<2;oy++)for(let ox=0;ox<2;ox++){const xx=x+ox,yy=y+oy;if(xx<0||yy<0||xx>=W||yy>=H)continue;const k=yy*W+xx;if(iz>=zb[k]*0.985){img.data[k*4]=70;img.data[k*4+1]=62;img.data[k*4+2]=55;}}}}
+const hex=(c,s)=>[1,3,5].map(i=>Math.min(255,Math.round(parseInt(c.slice(i,i+2),16)*s)));
+// 바닥과 천장 (큰 면은 쪼개서 그린다)
+for(let x=0;x<39.3;x+=1.31)for(let y=0;y<15;y+=1.25){quad([[x,y,0],[x+1.31,y,0],[x+1.31,y+1.25,0],[x,y+1.25,0]],[196,168,136]);if(!V.pitch)quad([[x,y,CH],[x+1.31,y,CH],[x+1.31,y+1.25,CH],[x,y+1.25,CH]],[246,243,236]);}
+for(const b of boxes){const {x,y,w,h,z0,z1,c}=b;const X=x+w,Y=y+h;
+ quad([[x,y,z1],[X,y,z1],[X,Y,z1],[x,Y,z1]],hex(c,1.0));quad([[x,y,z0],[X,y,z0],[X,Y,z0],[x,Y,z0]],hex(c,0.7));
+ quad([[x,y,z0],[X,y,z0],[X,y,z1],[x,y,z1]],hex(c,0.9));quad([[x,Y,z0],[X,Y,z0],[X,Y,z1],[x,Y,z1]],hex(c,0.9));
+ quad([[x,y,z0],[x,Y,z0],[x,Y,z1],[x,y,z1]],hex(c,0.8));quad([[X,y,z0],[X,Y,z0],[X,Y,z1],[X,y,z1]],hex(c,0.8));}
+for(const b of boxes){const {x,y,w,h,z0,z1}=b;const X=x+w,Y=y+h;const P=[[x,y],[X,y],[X,Y],[x,Y]];for(let i=0;i<4;i++){const a=P[i],d=P[(i+1)%4];line([a[0],a[1],z0],[d[0],d[1],z0]);line([a[0],a[1],z1],[d[0],d[1],z1]);line([a[0],a[1],z0],[a[0],a[1],z1]);}}
+for(const p of prisms){const n=p.pts.length;quad(p.pts.map(q=>[q[0],q[1],p.z1]),hex(p.c,1.0));for(let i=0;i<n;i++){const a=p.pts[i],b=p.pts[(i+1)%n];const dx=b[0]-a[0],dy=b[1]-a[1];const sh=0.78+0.14*Math.abs(dx)/Math.hypot(dx,dy);quad([[a[0],a[1],p.z0],[b[0],b[1],p.z0],[b[0],b[1],p.z1],[a[0],a[1],p.z1]],hex(p.c,sh));}}
+ctx.putImageData(img,0,0);document.title='done';
+</script>
