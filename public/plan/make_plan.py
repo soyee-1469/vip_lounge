@@ -125,6 +125,7 @@ a(f'<rect x="13.85" y="5.8" width="0.8" height="0.8" rx="0.3" fill="#fff" {ADD}/
 # 브랜드 월: 벽면 진열장 가운데 x 7.2~9.4(2.2m). 유리 자동문(x 7.6~9.0)의 중심 8.3과 한 줄이다
 a(f'<rect x="6.4" y="4.95" width="2.2" height="0.38" fill="#8d4b32" {ADD}/>')   # 브랜드 월: 진열장 가운데 2.2m 칸
 a(f'<rect x="8.65" y="4.95" width="1.5" height="0.38" fill="#f6e2b8" {ADD}/>')   # 화장품 진열: 브랜드 월 오른쪽 칸 1.6m
+a(f'<rect x="6.6" y="5.35" width="1.8" height="0.42" rx="0.08" fill="#fff" {ADD}/>')   # 브랜드 월 앞 낮은 벤치(높이 0.45). 위는 벽을 비추는 간접조명
 a('<line x1="7.5" y1="5.4" x2="7.5" y2="10.1" stroke="#8d4b32" stroke-width="0.04" stroke-dasharray="0.12 0.16"/>')
 # 결제·상담 카운터: 자동문 오른쪽, EV 홀 벽에서 북쪽으로 짧게 뺀다(0.65 × 1.52m). 둥글게 길게 빼지 않는다
 # 손님은 자동문 쪽(서쪽)에서, 직원은 동쪽에서 선다
@@ -146,11 +147,11 @@ a('<circle cx="1.2" cy="9.6" r="0.28" fill="#fff" stroke="#8a7d70" stroke-width=
 # 관리실 1~3 (손 스케치 2026-11-27): 문은 복도 쪽 벽 가운데 미닫이. 들어서면 두 베드 사이 통로이고,
 # 가운데 커튼으로 베드를 나눈다. 세면대는 북쪽 벽 가운데, 북쪽 두 모서리는 곡선 커튼 탈의 칸, 문 양옆 구석에 옷장과 수납
 # 관리실 4는 문이 북쪽이라 같은 배치를 위아래로 뒤집는다(머리는 남쪽 벽)
-def room(x0, w, top, depth, flip):
+def room(x0, w, top, depth, flip, lo=0.0, ro=0.0):   # lo/ro: 칸막이 띠(옷장·기둥) 때문에 탈의 커튼을 안쪽으로 미는 폭
     def yy(v, h=0):   # 북쪽 벽에서 v 떨어진 높이 h짜리 물건의 윗변
         return round(top + depth - v - h, 2) if flip else round(top + v, 2)
     m = x0 + w / 2
-    for bx, cx in ((m - 1.7, m - 2.35), (m + 1.0, m + 1.85)):   # 베드 0.7 × 1.9, 머리는 문 반대쪽 벽. 카트는 바깥쪽
+    for bx, cx in ((m - 1.7, m - 0.95), (m + 1.0, m + 0.45)):   # 베드 0.7 × 1.9, 머리는 문 반대쪽 벽. 미용기기 카트는 베드 안쪽(가운데 커튼 쪽). 바깥쪽 벽은 옷장·수납 자리
         a(f'<rect x="{bx:.2f}" y="{yy(0.6, 1.9)}" width="0.7" height="1.9" rx="0.06" {FUR}/>')
         a(f'<circle cx="{bx + 0.35:.2f}" cy="{yy(0.32)}" r="0.2" {FUR}/>')
         a(f'<rect x="{cx:.2f}" y="{yy(1.1, 0.5)}" width="0.5" height="0.5" rx="0.05" {FUR}/>')
@@ -158,18 +159,35 @@ def room(x0, w, top, depth, flip):
     a(f'<line x1="{m:.2f}" y1="{yy(0.8)}" x2="{m:.2f}" y2="{yy(2.5)}" {CUR}/>')                                                       # 가운데 커튼
     # 탈의 커튼: 머리맡 쪽 두 모서리에 반지름 0.95m 곡선 레일 커튼(손 스케치)
     sw = 1 if flip else 0
-    a(f'<path d="M{x0 + 0.06:.2f} {yy(0.95)} A0.95 0.95 0 0 {sw} {x0 + 0.95:.2f} {yy(0.06)}" {CUR}/>')
-    a(f'<path d="M{x0 + w - 0.95:.2f} {yy(0.06)} A0.95 0.95 0 0 {sw} {x0 + w - 0.06:.2f} {yy(0.95)}" {CUR}/>')
-    for tx in (x0 + 0.33, x0 + w - 0.33):
+    L0, R0 = x0 + lo, x0 + w - ro
+    a(f'<path d="M{L0 + 0.06:.2f} {yy(0.95)} A0.95 0.95 0 0 {sw} {L0 + 0.95:.2f} {yy(0.06)}" {CUR}/>')
+    a(f'<path d="M{R0 - 0.95:.2f} {yy(0.06)} A0.95 0.95 0 0 {sw} {R0 - 0.06:.2f} {yy(0.95)}" {CUR}/>')
+    for tx in (L0 + 0.4, R0 - 0.4):
         a(f'<text x="{tx:.2f}" y="{yy(0.42) if not flip else yy(0.42) + 0.07}" font-size="0.2" fill="#5a4f45" text-anchor="middle">탈의</text>')
-    sy = yy(depth - 0.65, 0.55)   # 문 쪽 벽에서 0.1m
+    if not flip: return   # 관리실 1~3의 옷장·수납은 방 사이 칸막이(기둥 양옆)에 짜 넣는다. 아래 BAND 참고
+    sy = yy(depth - 0.65, 0.55)   # 관리실 4: 문 쪽 벽에서 0.1m
     a(f'<rect x="{x0 + 0.1:.2f}" y="{sy}" width="0.9" height="0.55" fill="#d9d2c4" {ADD}/>')        # 옷장
     a(f'<rect x="{x0 + w - 1.3:.2f}" y="{sy}" width="1.2" height="0.55" fill="#d9d2c4" {ADD}/>')    # 수납
     a(f'<text x="{x0 + 0.55:.2f}" y="{sy + 0.35:.2f}" font-size="0.2" fill="#5a4f45" text-anchor="middle">옷장</text>')
     a(f'<text x="{x0 + w - 0.7:.2f}" y="{sy + 0.35:.2f}" font-size="0.2" fill="#5a4f45" text-anchor="middle">수납</text>')
-for x0, w in ((0.05, 5.64), (5.69, 5.4), (11.09, 5.4)):
-    room(x0, w, 0.0, 3.7, False)
+for x0, w, lo, ro in ((0.05, 5.64, 0.0, 0.3), (5.69, 5.4, 0.3, 0.3), (11.09, 5.4, 0.3, 0.0)):
+    room(x0, w, 0.0, 3.7, False, lo, ro)
 room(11.09, 5.4, F(11.03), F(14.61) - F(11.03), True)
+# 관리실 사이 칸막이(손 스케치 11/27): 폭 0.6m 띠 하나에 북쪽부터 오른쪽 방 옷장, 왼쪽 방 옷장, 기둥, 수납, 수납(복도 끝)
+BAND = lambda c: [('옷장', c - 0.3, 0.13, 0.6, 0.65, 1), ('옷장', c - 0.3, 0.95, 0.6, 0.62, -1), ('기둥', c - 0.35, 1.65, 0.7, 0.78, 0),
+                  ('수납', c - 0.3, 2.57, 0.6, 0.47, 1), ('수납', c - 0.3, 3.13, 0.6, 0.52, 0)]
+for c in (5.69, 11.09):
+    for t, bx, by, bw, bd, side in BAND(c):
+        if t == '기둥':
+            a(f'<rect x="{bx:.2f}" y="{by}" width="{bw}" height="{bd}" fill="#2b2622"/>'); continue
+        a(f'<rect x="{bx:.2f}" y="{by}" width="{bw}" height="{bd}" fill="#d9d2c4" {ADD}/>')
+        a(f'<text x="{bx + bw / 2:.2f}" y="{by + bd / 2 + 0.06:.2f}" font-size="0.15" fill="#5a4f45" text-anchor="middle">{t}</text>')
+        if side:   # 문짝이 열리는 쪽(어느 방이 쓰는지)
+            fx = bx + bw if side > 0 else bx
+            a(f'<path d="M{fx:.2f} {by:.2f} l{side * 0.4:.2f} 0" stroke="#2b2622" stroke-width="0.03"/>')
+            a(f'<path d="M{fx + side * 0.4:.2f} {by:.2f} A0.4 0.4 0 0 {1 if side > 0 else 0} {fx:.2f} {by + 0.4:.2f}" fill="none" stroke="#2b2622" stroke-width="0.025"/>')
+# 관리실 1 북서쪽 모서리 수납(탈의 커튼 안)
+a(f'<rect x="0.1" y="0.08" width="0.75" height="0.5" fill="#d9d2c4" {ADD}/>')
 # 소파 뒤 낮은 플랜터(0.35 × 2.0): 라운지 쪽에서 소파 등을 가린다. 서쪽에 복도 가는 길 1.0m가 남는다
 a('<rect x="12.15" y="6.1" width="0.35" height="2.0" rx="0.1" fill="#9db88f" stroke="#4f7a4a" stroke-width="0.05"/>')
 # 뒤 소파 3인(0.85 × 2.0): 플랜터에 등을 대고 서쪽(라운지·결제 카운터 쪽)을 본다. 체험 대기 8석
@@ -252,7 +270,7 @@ for x, y, t in (
     a(f'<text x="{x}" y="{Y(y)}">{t}</text>')
 a(f'<text x="0.85" y="6.6" transform="rotate(-90 0.85 6.6)">창가 벤치</text>')
 for x, y, t in ((3.2, 5.75, 'TV 85"'), (3.0, 7.7, '셀프 발마사지 4석'), (5.15, 5.85, '커피머신'),
-                (7.5, 5.7, '브랜드 월'), (9.4, 5.7, '화장품 진열'), (10.3, 9.15, '결제·상담 프론트'), (14.25, 9.45, '관리실 4 가는 길'), (13.03, 8.45, '3인 소파'), (11.72, 8.45, '3인 소파'),  (6.2, 8.1, '파우더룸 1.6 × 2.4m')):   # 실측 좌표(SVG)
+                (7.5, 6.05, '브랜드 월 · 벤치'), (9.4, 5.7, '화장품 진열'), (10.3, 9.15, '결제·상담 프론트'), (14.25, 9.45, '관리실 4 가는 길'), (13.03, 8.45, '3인 소파'), (11.72, 8.45, '3인 소파'),  (6.2, 8.1, '파우더룸 1.6 × 2.4m')):   # 실측 좌표(SVG)
     a(f'<text x="{x}" y="{y}">{t}</text>')
 a('<text x="14.0" y="5.35" font-size="0.42" font-weight="700" fill="#2b2622" text-anchor="middle">체험 대기</text>')
 a('<text x="1.2" y="10.5" font-size="0.36" font-weight="700" fill="#2b2622" text-anchor="middle">세탁</text>')
